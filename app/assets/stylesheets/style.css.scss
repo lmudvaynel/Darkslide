@@ -1,0 +1,157 @@
+﻿/* только для Internet Explorer */
+@font-face {
+   font-family: CondPro;
+   src: local("PFDinTextCondPro-Regular"),
+        url(font/PFDinTextCondPro-Regular.eot);
+}
+
+/* далее для всех остальных браузеров */
+@font-face {
+  font-family: CondPro;
+  src: local("PFDinTextCondPro-Regular"),
+       url(font/PFDinTextCondPro-Regular.ttf);
+}
+
+@font-face {
+   font-family: CondPro-Bold;
+   src: local("PFDinTextCondPro-Bold"),
+        url(font/PFDinTextCondPro-Bold.eot);
+}
+
+/* далее для всех остальных браузеров */
+@font-face {
+  font-family: CondPro-Bold;
+  src: local("PFDinTextCondPro-Bold"),
+       url(font/PFDinTextCondPro-Bold.ttf);
+}
+
+
+@font-face {
+   font-family: FuturaC;
+   src: local("FuturaFuturisC"),
+        url(font/futurafc.eot);
+}
+
+/* далее для всех остальных браузеров */
+@font-face {
+  font-family: FuturaC;
+  src: local("FuturaFuturisC"),
+       url(font/futurafc.ttf);
+}
+
+@font-face {
+   font-family: FuturaB;
+   src: local("FuturaFuturisB"),
+        url(font/futurfcb.eot);
+}
+
+/* далее для всех остальных браузеров */
+@font-face {
+  font-family: FuturaB;
+  src: local("FuturaFuturisB"),
+       url(font/futurfcb.ttf);
+}
+
+
+
+/* NEW CSS */
+body	{ font-family: Arial, Helvetica, sans-serif; color:#696b6b; font-size:12px; position:relative; background:#272425 }
+td, th	{ font-family: Arial, Helvetica, sans-serif; color:#696b6b; font-size:12px; }
+
+a		{ font-family: Arial, Helvetica, sans-serif; color:#696b6b; font-size:12px; text-decoration:none; }
+a:hover	{ font-family: Arial, Helvetica, sans-serif; color:#696b6b; font-size:12px; text-decoration:none}
+
+.clear		{ clear:both}
+#wrapper	{ background:url(../images/light-main-bg.jpg) no-repeat top center; min-height:1000px; }
+.wrapper	{ width:1010px; margin:auto; position:relative}
+.fl { float:left}
+.fr { float:right}
+
+
+a, img, input, button, textarea, select { outline: none; resize:none }
+strong, b { font-weight:bold; }
+em { font-style:italic}
+
+/*
+* { 
+	-webkit-transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+	-ms-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+}
+*/
+
+/* HEADER */
+#header { height:33px; padding-top:20px; background:url(logo-line.png) no-repeat 50% 100%; width:1064px; margin:auto}
+#header .logo { float:right; margin-right:11px}
+#header .logo a { display:block; height:33px; width:1724px}
+
+/* CENTER */
+#center { padding-bottom:20px}
+
+.page .page-bg { height:476px; margin-bottom:24px; position:relative}
+.page .bg-1 { background:url(slide-1.jpg) no-repeat 50% 50%;}
+.page .bg-2 { background:url(slide-2.jpg) no-repeat 50% 50%;}
+.page .close { position:absolute; right:0px; top:30px; display:none}
+.page .close a { width:48px; height:48px; background:url(close.png) no-repeat 0 0; display:block}
+
+.page .bg-1 .fadeSlide  { position:absolute; z-index:20}
+
+.page .bg-1 .fadeSlide.bottom_1 { position:absolute; width:120px; height:62px; left:208px; top:320px; opacity:0; background:#000}
+.page .bg-1 .fadeSlide.bottom_2 { position:absolute; width:118px; height:62px; left:328px; top:320px; opacity:0; background:#000}
+.page .bg-1 .fadeSlide.bottom_3 { position:absolute; width:120px; height:62px; left:447px; top:320px; opacity:0; background:#000}
+.page .bg-1 .fadeSlide.bottom_4 { position:absolute; width:118px; height:62px; left:568px; top:320px; opacity:0; background:#000}
+.page .bg-1 .fadeSlide.bottom_5 { position:absolute; width:120px; height:62px; left:686px; top:320px; opacity:0; background:#000}
+
+
+
+.page .bg-1 .fadeSlide.left { position:absolute; width:68px; height:105px; left:16px; top:180px; opacity:0; background:url(left-fade.png) no-repeat 0 0}
+.page .bg-1 .fadeSlide.right { position:absolute; width:69px; height:105px; right:11px; top:180px; opacity:0; background:url(right-fade.png) no-repeat 0 0}
+
+
+.page .page-header { width:980px; margin:auto; padding:30px 0}
+.page .page-header .slogan { text-transform:uppercase; font-family: CondPro-Bold; color:#d0d2d3; font-size:26px; padding-bottom:10px}
+.page .page-header .logo { float:left; padding-right:20px; border-right:1px solid #d0d2d3; color:#d0d2d3; }
+.page .page-header .logo h1 { font-family: CondPro-Bold; color:#d0d2d3; font-size:64px; line-height:1}
+.page .page-header .logo span { font-size:22px; font-family: CondPro; line-height:1}
+.page .page-header .text { color:#d0d2d3; font-size:18px; font-family: CondPro-Bold; margin-top:-4px; text-transform:uppercase; margin-left:284px; line-height:23px}
+
+.advertising-text { text-align:center; color:#d0d2d3; font-size:28px; font-family: CondPro-Bold; }
+
+.page .page-content { width:980px; margin:auto; font-family: CondPro; color:#d0d2d3; font-size:16px}
+.page .column { width:470px}
+.page h3 { text-transform:uppercase; font-family: CondPro-Bold; color:#d0d2d3; font-size:18px; padding-bottom:12px}
+
+.page .horizontal { padding-top:61px}
+.page .horizontal, .page .vertical { font-family:FuturaC; font-size:14px}
+.page .horizontal img, .page .vertical img { margin-bottom:10px}
+.page .horizontal span, .page .vertical span { font-family:FuturaB; color:#ff0000}
+
+.pdf { background:url(../images/pdf_document.png) no-repeat 0 0; padding-left:20px; color:#ff0000; font-family: CondPro-Bold; font-size: 17px;}
+.pdf:hover { color:#ffffff; font-family: CondPro-Bold; font-size:17px}
+
+.sidebar { float:left; width:250px; border-right:1px solid #fff; height:480px;}
+.common { float:right; width:710px}
+
+.page .menu li { padding-bottom:27px}
+.page .menu li a { display:inline-block; font-size:17px; color:#d0d2d3; letter-spacing:1.1px; font-family: CondPro-Bold; text-transform:uppercase; line-height:23px }
+.page .menu li a:hover, .page .menu li a.current { color:#ff0000}
+
+.thumbnails {
+   height: 112px;
+	 text-align:center
+}
+.thumb_container {
+	overflow:hidden; display:inline-block;
+	height: 112px;
+	width: 112px;
+}
+.thumb_container a { display:block; padding:1px}
+.thumb_container a:hover { padding:0; border:1px solid #d0d2d3}
+
+/* FOOTER */
+#footer { color:#9d9fa1; font-family:Arial, Helvetica, sans-serif; font-size:12px; padding:20px 0}
+#footer a { }
+#footer a:hover { text-decoration:underline;}
+#footer .phone, #footer .address  { float:left; width:150px; padding-right:10px}
