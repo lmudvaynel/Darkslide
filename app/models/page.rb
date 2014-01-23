@@ -4,4 +4,7 @@ class Page < ActiveRecord::Base
   belongs_to :seo
 
   accepts_nested_attributes_for :seo, :allow_destroy => true, :reject_if => :all_blank
+
+  validates :slug, presence: true, uniqueness: true
+  validates :name, presence: true
 end
