@@ -2,7 +2,7 @@
   <%= f.inputs "Основное" do %>
     <%= f.input :slug, label: 'Slug' %>
     <%= f.input :name, input_html: {rows:1}, label: 'Name' %>
-    <%= f.input :content, label: 'Content' %>
+    <%= f.input :content, as: :ckeditor, label: 'Content' %>
   <% end %>
 
   <div class="globalize-inputs globalize-content">
