@@ -2,54 +2,54 @@
 @font-face {
    font-family: CondPro;
    src: local("PFDinTextCondPro-Regular"),
-        url(font/PFDinTextCondPro-Regular.eot);
+        url(PFDinTextCondPro-Regular.eot);
 }
 
 /* далее для всех остальных браузеров */
 @font-face {
   font-family: CondPro;
   src: local("PFDinTextCondPro-Regular"),
-       url(font/PFDinTextCondPro-Regular.ttf);
+       url(PFDinTextCondPro-Regular.ttf);
 }
 
 @font-face {
    font-family: CondPro-Bold;
    src: local("PFDinTextCondPro-Bold"),
-        url(font/PFDinTextCondPro-Bold.eot);
+        url(PFDinTextCondPro-Bold.eot);
 }
 
 /* далее для всех остальных браузеров */
 @font-face {
   font-family: CondPro-Bold;
   src: local("PFDinTextCondPro-Bold"),
-       url(font/PFDinTextCondPro-Bold.ttf);
+       url(PFDinTextCondPro-Bold.ttf);
 }
 
 
 @font-face {
    font-family: FuturaC;
    src: local("FuturaFuturisC"),
-        url(font/futurafc.eot);
+        url(futurafc.eot);
 }
 
 /* далее для всех остальных браузеров */
 @font-face {
   font-family: FuturaC;
   src: local("FuturaFuturisC"),
-       url(font/futurafc.ttf);
+       url(futurafc.ttf);
 }
 
 @font-face {
    font-family: FuturaB;
    src: local("FuturaFuturisB"),
-        url(font/futurfcb.eot);
+        url(futurfcb.eot);
 }
 
 /* далее для всех остальных браузеров */
 @font-face {
   font-family: FuturaB;
   src: local("FuturaFuturisB"),
-       url(font/futurfcb.ttf);
+       url(futurfcb.ttf);
 }
 
 
@@ -62,7 +62,7 @@ a		{ font-family: Arial, Helvetica, sans-serif; color:#696b6b; font-size:12px; t
 a:hover	{ font-family: Arial, Helvetica, sans-serif; color:#696b6b; font-size:12px; text-decoration:none}
 
 .clear		{ clear:both}
-#wrapper	{ background:url(../images/light-main-bg.jpg) no-repeat top center; min-height:1000px; }
+#wrapper	{ background:url(light-main-bg.jpg) no-repeat top center; min-height:1000px; }
 .wrapper	{ width:1010px; margin:auto; position:relative}
 .fl { float:left}
 .fr { float:right}
@@ -128,7 +128,7 @@ em { font-style:italic}
 .page .horizontal img, .page .vertical img { margin-bottom:10px}
 .page .horizontal span, .page .vertical span { font-family:FuturaB; color:#ff0000}
 
-.pdf { background:url(../images/pdf_document.png) no-repeat 0 0; padding-left:20px; color:#ff0000; font-family: CondPro-Bold; font-size: 17px;}
+.pdf { background:url(pdf_document.png) no-repeat 0 0; padding-left:20px; color:#ff0000; font-family: CondPro-Bold; font-size: 17px;}
 .pdf:hover { color:#ffffff; font-family: CondPro-Bold; font-size:17px}
 
 .sidebar { float:left; width:250px; border-right:1px solid #fff; height:480px;}
