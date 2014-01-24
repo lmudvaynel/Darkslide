@@ -1,6 +1,8 @@
 <%= semantic_form_for [:admin, resource] do |f| %>
   <%= f.inputs "Основное" do %>
     <%= f.input :slug, label: 'Slug' %>
+    <%= f.input :position %>
+    <%= f.input :hidden, label: 'Скрыть пункт меню' %>
     <%= f.input :name, input_html: {rows:1}, label: 'Name' %>
     <%= f.input :content, as: :ckeditor, label: 'Content' %>
   <% end %>

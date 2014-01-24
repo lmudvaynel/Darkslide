@@ -1,5 +1,9 @@
 ActiveAdmin.register Page do
 
+  config.sort_order = 'position_asc'
+
+  sortable
+
 	controller do
     def new
       @page = Page.new
@@ -14,10 +18,12 @@ ActiveAdmin.register Page do
   end
 
 	index do
+    sortable_handle_column
     column :id
+    column :position, :sortable => :position
     column :name
     column :slug
-    
+        
     default_actions
   end
   

@@ -1,0 +1,9 @@
+<nav class="header-menu">
+  <ul>
+		<% Page.visible.each do |page| %>
+			<li class="menu_item <%= menu_item_state(page) %>">
+				<%= link_to content_tag(:span, page.name), slug_path(page) %>
+			</li>
+		<% end %>
+	</ul>
+</nav>
