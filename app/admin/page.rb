@@ -1,5 +1,5 @@
 ActiveAdmin.register Page do
-
+  config.batch_actions = false
   config.sort_order = 'position_asc'
 
   sortable
