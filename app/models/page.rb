@@ -1,8 +1,9 @@
 class Page < ActiveRecord::Base
   attr_accessible :content, :name, :slug, :seo_id, :seo_attributes, :position,
-  								:hidden
+  								:hidden, :template_id
   
   belongs_to :seo
+  belongs_to :template
 
   acts_as_list
 
