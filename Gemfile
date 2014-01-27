@@ -13,6 +13,12 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'acts_as_list'
 gem 'activeadmin-sortable'
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'guard-spork', :github => 'guard/guard-spork'
+  gem 'spork'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -24,6 +30,12 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'rb-inotify'
+  gem 'libnotify'
 end
 
 gem 'jquery-rails'
