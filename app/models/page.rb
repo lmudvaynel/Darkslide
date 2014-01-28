@@ -11,6 +11,7 @@ class Page < ActiveRecord::Base
 
   validates :slug, presence: true, uniqueness: true
   validates :name, presence: true
+  validates :template_id, presence: true
 
   default_scope order('position')
   scope :visible, -> { where(hidden: false) }
