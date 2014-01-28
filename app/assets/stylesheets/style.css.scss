@@ -139,7 +139,7 @@ em { font-style:italic}
 
 .page .menu li { padding-bottom:27px}
 .page .menu li a { display:inline-block; font-size:17px; color:#d0d2d3; letter-spacing:1.1px; font-family: CondPro-Bold; text-transform:uppercase; line-height:23px }
-.page .menu li a:hover, .page .menu li a.current { color:#ff0000}
+.page .menu li a:hover, .page .menu li.current a { color:#ff0000}
 
 .thumbnails {
    height: 112px;
