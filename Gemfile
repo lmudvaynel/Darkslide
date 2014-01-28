@@ -14,6 +14,8 @@ gem 'acts_as_list'
 gem 'activeadmin-sortable'
 gem 'friendly_id'
 
+gem 'unicorn'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
@@ -39,19 +41,14 @@ group :test do
   gem 'libnotify'
 end
 
+group :development do
+  gem 'capistrano'
+  gem 'capistrano-ext'
+  gem 'capistrano-unicorn'
+  gem 'rvm-capistrano', github: 'wayneeseguin/rvm-capistrano'
+  gem 'capistrano-helpers'
+end
+
 gem 'jquery-rails'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
+gem 'rename' # For rename project with one comand "rails g rename:app_to New-Name"
