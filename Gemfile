@@ -12,6 +12,7 @@ gem 'mini_magick'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'acts_as_list'
 gem 'activeadmin-sortable'
+gem 'friendly_id'
 
 group :development, :test do
   gem 'rspec-rails'

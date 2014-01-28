@@ -16,4 +16,8 @@ class Page < ActiveRecord::Base
   default_scope order('position')
   scope :visible, -> { where(hidden: false) }
   scope :invisible, -> { where(hidden: true) }
+
+  extend FriendlyId
+  friendly_id :slug
+  
 end

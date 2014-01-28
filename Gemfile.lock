@@ -106,6 +106,8 @@ GEM
     formatador (0.2.4)
     formtastic (2.3.0.rc2)
       actionpack (>= 3.0)
+    friendly_id (4.0.10.1)
+      activerecord (>= 3.0, < 4.0)
     guard (2.3.0)
       formatador (>= 0.2.4)
       listen (~> 2.1)
@@ -251,6 +253,7 @@ DEPENDENCIES
   carrierwave
   ckeditor
   coffee-rails (~> 3.2.1)
+  friendly_id
   guard-rspec
   guard-spork!
   jquery-rails
