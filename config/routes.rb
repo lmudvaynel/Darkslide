@@ -1,4 +1,4 @@
-TestApp::Application.routes.draw do
+Darkslide::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
