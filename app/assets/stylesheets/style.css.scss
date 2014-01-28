@@ -131,7 +131,10 @@ em { font-style:italic}
 .pdf { background:url(pdf_document.png) no-repeat 0 0; padding-left:20px; color:#ff0000; font-family: CondPro-Bold; font-size: 17px;}
 .pdf:hover { color:#ffffff; font-family: CondPro-Bold; font-size:17px}
 
-.sidebar { float:left; width:250px; border-right:1px solid #fff; height:480px;}
+.jpg { background:url(img/jpg-icon.png) no-repeat 0 0; padding-left:20px; color:#ff0000; font-family: CondPro-Bold; font-size: 17px;}
+.jpg:hover { color:#ffffff; font-family: CondPro-Bold; font-size:17px}
+
+.sidebar { float:left; width:250px; border-right:1px solid #fff;}
 .common { float:right; width:710px}
 
 .page .menu li { padding-bottom:27px}

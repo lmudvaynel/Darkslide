@@ -2,7 +2,14 @@
 	<div class="page-wrapper">
 		<div class="page">
 			<div class="wrapper">
-			<%= raw @page.content %>
+				<%= raw @page.template.temp_content %>
+				<div class="page-content">
+					<%= render 'shared/menu' %>
+					<div class="common">
+						<%= raw @page.content %>
+					</div>
+						<div class="clear"></div>
+				</div>
 			</div>
 		</div>
 	</div>
