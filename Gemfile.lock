@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/gregbell/active_admin.git
-  revision: 74c1b220639862b99173f6d10a0852d23aa289ef
+  revision: 159c8cc631f74b8db1717d66b0e33ee635ef9693
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0)
@@ -114,7 +114,7 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.6.3)
+    coffee-script-source (1.7.0)
     devise (3.2.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -124,6 +124,11 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.0.2)
+    factory_girl (4.3.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.3.0)
+      factory_girl (~> 4.3.0)
+      railties (>= 3.0.0)
     ffi (1.9.3)
     formatador (0.2.4)
     formtastic (2.3.0.rc2)
@@ -131,13 +136,13 @@ GEM
     friendly_id (4.0.10.1)
       activerecord (>= 3.0, < 4.0)
     git (1.2.6)
-    guard (2.3.0)
+    guard (2.2.5)
       formatador (>= 0.2.4)
       listen (~> 2.1)
       lumberjack (~> 1.0)
       pry (>= 0.9.12)
       thor (>= 0.18.1)
-    guard-rspec (4.2.4)
+    guard-rspec (4.2.5)
       guard (~> 2.1)
       rspec (>= 2.14, < 4.0)
     has_scope (0.6.0.rc)
@@ -150,7 +155,7 @@ GEM
       has_scope (~> 0.6.0.rc)
       responders (~> 1.0.0.rc)
     journey (1.0.4)
-    jquery-rails (3.0.4)
+    jquery-rails (3.1.0)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (4.1.1)
@@ -190,7 +195,7 @@ GEM
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.3)
-    pry (0.9.12.4)
+    pry (0.9.12.6)
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
@@ -272,7 +277,7 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    unicorn (4.8.0)
+    unicorn (4.8.1)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
@@ -298,6 +303,7 @@ DEPENDENCIES
   carrierwave
   ckeditor
   coffee-rails (~> 3.2.1)
+  factory_girl_rails
   friendly_id
   guard-rspec
   guard-spork!
