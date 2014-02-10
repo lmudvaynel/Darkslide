@@ -14,6 +14,7 @@ gem 'acts_as_list'
 gem 'activeadmin-sortable'
 gem 'friendly_id'
 gem 'factory_girl_rails'
+gem 'russian'
 
 gem 'unicorn'
 

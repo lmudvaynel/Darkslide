@@ -1,0 +1,90 @@
+ru:
+  active_admin:
+    devise:
+      email:
+        title: "Емайл"
+      password:
+        title: "Пароль"
+  footer:
+    text: "Компания"
+  mailer:
+    email: "Введите ваш e-mail"
+    message: "Введите ваше сообщение"
+    send: "Отправить"
+  js:
+    project_prefix: "/ru"
+    wrong_email: "Введите правильный e-mail"
+    short_message: "Ваше сообщение cлишком короткое"
+    send_success: "Ваше сообщение успешно отправлено"
+    send_error: "Произошла ошибка"
+  translation:
+    en: "English"
+    ru: "Русский"
+  activerecord:
+    models:
+      admin_user:
+        zero:  Администраторов
+        one:   Администратор
+        few:   Администраторa
+        many:  Администраторов
+        other: Администраторы
+      feedback:
+        Обратная связь
+      page:
+        zero: Страниц
+        one: Страница
+        few: Страницы
+        many: Страниц
+        other: Страницы
+      template:
+          zero: Шаблонов
+          one: Шаблон
+          few: Шаблоны
+          many: Шаблонов
+          other: Шаблоны  
+      seo:
+        СЕО
+    attributes:
+      admin_user:
+        id: Номер
+        email: Емайл
+        current_sign_in_at: Время текущего входа
+        last_sign_in_at: Врема последнего входа
+        current_sign_in_ip: Текущий IP
+        last_sign_in_ip: Последний IP
+        created_at: Дата создания
+        updated_at: Дата обновления
+        sign_in_count: Число входов
+        password: Пароль
+        password_confirmation: Подтверждение пароля
+      feedback:
+        id: Номер
+        email: Емайл
+        message: Сообщение
+        created_at: Дата создания
+        updated_at: Дата обновления
+      template:
+        id: Номер
+        temp_name: Название
+        temp_content: Содержание
+        pages: Страница
+        created_at: Дата создания
+        updated_at: Дата обновления
+      page:
+        ancestry: Родительская страница
+        created_at: Дата создания
+        hidden: Скрытая
+        id: Номер
+        template: Шаблон для страницы
+        name: Заголовок
+        parent: Родительская страница
+        parent_id: Родительская страница
+        position: Позиция
+        slug: Псевдоним
+        updated_at: Дата обновления
+      seo:
+        title: Заголовок
+        keywords: Ключевые слова
+        description: Описание
+        created_at: Дата создания
+        updated_at: Дата обновления
