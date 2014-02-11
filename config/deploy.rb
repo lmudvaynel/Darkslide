@@ -1,25 +1,47 @@
-set :application, "set your application name here"
-set :repository,  "set your repository location here"
+require 'bundler/capistrano'
+#require 'capistrano-helpers/migrations'
+#require 'capistrano-helpers/shared'
+require 'capistrano-helpers/privates'
 
-# set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+set :stages, %w(production staging)
+set :default_stage, "staging"
+require 'capistrano/ext/multistage'
 
-role :web, "your web-server here"                          # Your HTTP server, Apache/etc
-role :app, "your app-server here"                          # This may be the same as your `Web` server
-role :db,  "your primary db-server here", :primary => true # This is where Rails migrations will run
-role :db,  "your slave db-server here"
+set :application, "DarkSlide" #write app name there
 
-# if you want to clean up old releases on each deploy uncomment this:
-# after "deploy:restart", "deploy:cleanup"
+set :scm, :git
+set :repository,  "git@github.com:simutin/Darkslide.git" #place your repo there
 
-# if you're still using the script/reaper helper you will need
-# these http://github.com/rails/irs_process_scripts
+set :deploy_via, :remote_cache
 
-# If you are using Passenger mod_rails uncomment this:
-# namespace :deploy do
-#   task :start do ; end
-#   task :stop do ; end
-#   task :restart, :roles => :app, :except => { :no_release => true } do
-#     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-#   end
-# end
+set :user, "rvm_user"
+set :use_sudo, false
+
+set :rvm_type, :system 
+set :rvm_ruby_string, "ruby-2.0.0-head"
+set :rvm_install_with_sudo, true
+set :rvm_autolibs_flag, "readonly"
+
+set :base_directory, '/var/www/apps'
+
+before 'deploy:setup', 'rvm:install_rvm'
+before 'deploy:setup', 'rvm:install_ruby'
+
+after 'deploy:restart', 'unicorn:restart'  # app preloaded
+
+after 'deploy:restart', 'nginx:update_site_config'
+after 'nginx:update_site_config', 'nginx:reload'
+
+after 'deploy:restart', 'deploy:cleanup' #remove old releases
+
+require 'rvm/capistrano'
+require 'capistrano-unicorn'
+
+ssh_options[:forward_agent] = true
+default_run_options[:pty] = true
+
+Dir.glob('config/deploy/shared/*.rb').each{ |file| load file }
+
+set :privates, %w{
+  config/database.yml
+}
