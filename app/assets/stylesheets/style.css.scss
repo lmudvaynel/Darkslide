@@ -88,7 +88,7 @@ em { font-style:italic}
 #header .logo a { display:block; height:33px; width:1724px}
 
 /* CENTER */
-#center { padding-bottom:20px}
+#center { padding-bottom:50px}
 
 .page .page-bg { height:476px; margin-bottom:24px; position:relative}
 .page .bg-1 { background:url(slide-1.jpg) no-repeat 50% 50%;}
@@ -157,4 +157,4 @@ em { font-style:italic}
 #footer { color:#9d9fa1; font-family:Arial, Helvetica, sans-serif; font-size:12px; padding:20px 0}
 #footer a { }
 #footer a:hover { text-decoration:underline;}
-#footer .phone, #footer .address  { float:left; width:150px; padding-right:10px}
+#footer .phone, #footer .address  { float:left; width:150px; padding: 0 15px}
