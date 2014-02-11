@@ -41,7 +41,9 @@ ru:
           one: Шаблон
           few: Шаблоны
           many: Шаблонов
-          other: Шаблоны  
+          other: Шаблоны 
+      sidebartext:
+        Текст сайдбара
       seo:
         СЕО
     attributes:
@@ -68,6 +70,11 @@ ru:
         temp_name: Название
         temp_content: Содержание
         pages: Страница
+        created_at: Дата создания
+        updated_at: Дата обновления
+      sidebartext:
+        id: Номер
+        content: Содержание
         created_at: Дата создания
         updated_at: Дата обновления
       page:
