@@ -44,6 +44,8 @@ ru:
           other: Шаблоны 
       sidebartext:
         Текст сайдбара
+      footer:
+        Footer
       seo:
         СЕО
     attributes:
@@ -73,6 +75,11 @@ ru:
         created_at: Дата создания
         updated_at: Дата обновления
       sidebartext:
+        id: Номер
+        content: Содержание
+        created_at: Дата создания
+        updated_at: Дата обновления
+      footer:
         id: Номер
         content: Содержание
         created_at: Дата создания

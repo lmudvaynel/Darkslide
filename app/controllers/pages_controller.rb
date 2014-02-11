@@ -3,6 +3,7 @@ class PagesController < ApplicationController
     @page = Page.find_by_slug(params[:slug]) || Page.find(params[:slug])
     render params[:slug] if controller_view_exists?(params[:slug])
     @sbtext = Sidebartext.all
+    @foot = Footer.find(1)
   end
 
   private

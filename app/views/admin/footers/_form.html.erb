@@ -1,0 +1,7 @@
+<%= semantic_form_for [:admin, resource] do |f| %>
+  <%= f.inputs "Основное" do %>
+    <%= f.input :content, as: :ckeditor, label: 'Содержание' %>
+  <% end %>
+
+  <%= f.actions %>
+<% end %>
