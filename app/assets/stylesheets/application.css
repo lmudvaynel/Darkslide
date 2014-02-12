@@ -10,7 +10,5 @@
  *
  *= require_self
  *= require colorbox
+ *= require_tree .
  */
-@import "reset";
-@import "style";
-@import "pages";
