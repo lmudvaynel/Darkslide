@@ -37,15 +37,21 @@ ru:
         many: Страниц
         other: Страницы
       template:
-          zero: Шаблонов
-          one: Шаблон
-          few: Шаблоны
-          many: Шаблонов
-          other: Шаблоны 
+        zero: Шаблонов
+        one: Шаблон
+        few: Шаблоны
+        many: Шаблонов
+        other: Шаблоны 
       sidebartext:
         Текст сайдбара
       footer:
         Footer
+      news:
+        zero: Новостей
+        one: Новость
+        few: Новости
+        many: Новостей
+        other: Новости
       seo:
         СЕО
     attributes:
