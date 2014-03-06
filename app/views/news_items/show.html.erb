@@ -1,0 +1,18 @@
+
+<div id="center">
+  <div class="page-wrapper">
+    <div class="page">
+      <div class="wrapper">
+        <%= raw @temp.temp_content %>
+        <div class="page-content">
+          <%= render 'shared/menu' %>
+          <div class="common">
+            <h3> <%= @news_item.title %></h3>
+            <span> <%= @news_item.published_at %> </span><br><br>
+            <%= raw @news_item.content %>
+          </div>
+            <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </div>

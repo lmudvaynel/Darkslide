@@ -7,5 +7,6 @@ Darkslide::Application.routes.draw do
   root :to => "pages#show", :slug => 'index'
   get ':slug' => 'pages#show', :as => :slug
   resources :pages
+  resources :news_items
   
 end

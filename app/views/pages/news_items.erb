@@ -6,7 +6,7 @@
 				<div class="page-content">
 					<%= render 'shared/menu' %>
 					<div class="common">
-					<% if @page.slug == "index" || @page.slug == "news_items"  %>
+					<% if @page.slug == "index" %>
 						<%= render 'news_items/list' %>
 					<% else %>
 						<%= raw @page.content %>

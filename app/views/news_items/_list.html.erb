@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="headline">
+  	<% if @page.slug == "news_items" %>
+  	 	<h3>Архив новостей</h3>
+  	<% else %>
+  		<h3>Новости</h3>
+  	<% end %>
+  </div>
+  <ul class="news_list">
+  	<% if @page.slug == "index" %>
+			<%= render @nws %>
+		<% else %>
+			<%= render @news_items %>
+		<% end %>
+  </ul>
+  <% if @page.slug == "index" %>
+  	<%= link_to 'Архив новостей', news_items_path, class: "" %>
+  <% else %>
+			<%= link_to 'Назад', root_path, class: "" %>
+  <% end %>
+</div>
