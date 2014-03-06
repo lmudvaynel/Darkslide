@@ -5,4 +5,6 @@ class NewsItem < ActiveRecord::Base
   validates :description, presence: true
   validates :content, presence: true
   validates :published_at, presence: true
+
+  default_scope order: 'news_items.published_at DESC'
 end
