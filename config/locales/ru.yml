@@ -46,7 +46,7 @@ ru:
         Текст сайдбара
       footer:
         Footer
-      news:
+      news_item:
         zero: Новостей
         one: Новость
         few: Новости
@@ -102,6 +102,13 @@ ru:
         position: Позиция
         slug: Псевдоним
         updated_at: Дата обновления
+      news_item:
+        created_at: Дата создания
+        id: Номер
+        title: Заголовок
+        description: Краткое содержание
+        content: Содержание
+        published_at: Дата опубликования
       seo:
         title: Заголовок
         keywords: Ключевые слова
