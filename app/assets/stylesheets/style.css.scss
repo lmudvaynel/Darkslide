@@ -55,7 +55,7 @@
 
 
 /* NEW CSS */
-body	{ font-family: Arial, Helvetica, sans-serif; color:#696b6b; font-size:12px; position:relative; background:#272425 }
+body	{ font-family: CondPro; color:#696b6b; font-size:12px; position:relative; background:#272425 }
 td, th	{ font-family: Arial, Helvetica, sans-serif; color:#696b6b; font-size:12px; }
 
 a		{ font-family: Arial, Helvetica, sans-serif; color:#696b6b; font-size:12px; text-decoration:none; }
@@ -71,6 +71,14 @@ a:hover	{ font-family: Arial, Helvetica, sans-serif; color:#696b6b; font-size:12
 a, img, input, button, textarea, select { outline: none; resize:none }
 strong, b { font-weight:bold; }
 em { font-style:italic}
+
+#svgContainer {
+  width: 558px;
+  height: 238px;
+  margin-left: 228px;
+  margin-top: 72px;
+  position: absolute;
+}
 
 /*
 * { 
@@ -141,14 +149,11 @@ em { font-style:italic}
 .page .menu li a { display:inline-block; font-size:17px; color:#d0d2d3; letter-spacing:1.1px; font-family: CondPro-Bold; text-transform:uppercase; line-height:23px }
 .page .menu li a:hover, .page .menu li.current a { color:#ff0000}
 
-.thumbnails {
-   height: 112px;
-	 text-align:center
+.news_list {
+   overflow:hidden;
 }
-.thumb_container {
-	overflow:hidden; display:inline-block;
-	height: 112px;
-	width: 112px;
+.span3 {
+  margin-top:15px;
 }
 .thumb_container a { display:block; padding:1px}
 .thumb_container a:hover { padding:0; border:1px solid #d0d2d3}
