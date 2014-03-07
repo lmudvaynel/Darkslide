@@ -5,7 +5,7 @@ class PagesController < ApplicationController
     render params[:slug] if controller_view_exists?(params[:slug])
     @sbtext = Sidebartext.all
     @foot = Footer.find(1)
-    @news_items = NewsItem.all
+    @news_items = Kaminari.paginate_array(NewsItem.all).page(params[:page]).per(5)
     @nws = @news_items.first(3)
   end
 

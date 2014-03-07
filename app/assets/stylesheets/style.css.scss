@@ -152,6 +152,26 @@ em { font-style:italic}
 .news_list {
    overflow:hidden;
 }
+
+/* Pagination */
+
+.pagination {
+  margin: 20px 0;
+  overflow: hidden;
+}
+.pagination div {
+  font-size: 20px;
+  font-family: Arial;
+  padding: 2px;
+  border: 1px solid;
+  overflow: hidden;
+  width: 25px;
+  float: left;
+  text-align: center;
+}
+.pagination div a {
+  font-size: 20px;
+}
 .span3 {
   margin-top:15px;
 }

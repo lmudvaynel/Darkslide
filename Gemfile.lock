@@ -315,6 +315,7 @@ DEPENDENCIES
   guard-rspec
   guard-spork!
   jquery-rails
+  kaminari
   libnotify
   mini_magick
   mysql2

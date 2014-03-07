@@ -11,6 +11,7 @@
 			<%= render @nws %>
 		<% else %>
 			<%= render @news_items %>
+      <%= paginate @news_items %>
 		<% end %>
   </ul>
   <% if @page.slug == "index" %>

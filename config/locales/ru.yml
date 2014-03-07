@@ -1,4 +1,10 @@
 ru:
+  views:
+    pagination:
+      next: ">"
+      last: ">>"
+      previous: "<"
+      first: "<<"
   active_admin:
     devise:
       email:
