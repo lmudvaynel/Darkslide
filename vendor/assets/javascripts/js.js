@@ -20,3 +20,16 @@ $(document).ready(function(){
 			});
 		}
 	});
+
+	
+
+
+	
+});
+
+
+function blinkButton() { 
+	$('.close a').animate({opacity: 1}, 800, function() {
+		$(this).delay(200).animate({opacity: 0.4}, 800, function() { { blinkButton();} });
+	});
+}
