@@ -196,6 +196,13 @@ em { font-style:italic}
   height: 112px;
   width: 112px;
 }
+.wrap_map {
+  height: 350px;
+  margin: 30px 0;
+}
+#map-canvas {
+  height: 350px;
+}
 .thumb_container a { display:block; padding:1px}
 .thumb_container a:hover { padding:0; border:1px solid #d0d2d3}
 

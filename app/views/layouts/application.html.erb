@@ -4,7 +4,65 @@
   <%= raw seo_meta_tags %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" %>
   <%= csrf_meta_tags %>
+  <script>
+    var map;
+    var myLatlng1;
+    var myLatlng2;
+    var myLatlng3;
+		function initialize() {
+		  var mapOptions = {
+		    zoom: 6,
+		    center: new google.maps.LatLng(55.7522200,37.6155600)
+		  };
+
+		  map = new google.maps.Map(document.getElementById('map-canvas'),
+		      mapOptions);
+
+		  myLatlng1 = new google.maps.LatLng(54.7100000,20.5000000); //Kaliningrad
+		  myLatlng2 = new google.maps.LatLng(55.7522200,37.6155600); //Moscow
+		  myLatlng3 = new google.maps.LatLng(53.5233300,49.4125000); //Tolyatti
+
+		  var marker1 = new google.maps.Marker({
+		    position: myLatlng1,
+		    map: map
+		  });
+
+		  var marker2 = new google.maps.Marker({
+		    position: myLatlng2,
+		    map: map
+		  });
+
+		  var marker3 = new google.maps.Marker({
+		    position: myLatlng3,
+		    map: map
+		  });
+
+		  var marker4 = new google.maps.Marker({
+		    position: myLatlng4,
+		    map: map
+		  });
+		}
+
+	function mark1() {
+	 	//var latLng = new google.maps.LatLng(55.745431,37.571975);
+	 	map.panTo(myLatlng1);
+	 }
+
+	function mark2() {
+	 	//var latLng = new google.maps.LatLng(55.745431,37.571975);
+	 	map.panTo(myLatlng2);
+	 }
+
+	function mark3() {
+		//var latLng = new google.maps.LatLng(55.745431,37.571975);
+		map.panTo(myLatlng3);
+	}  
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+  </script>
 </head>
 <body>
 	<div id="wrapper">
@@ -16,6 +74,7 @@
 	</div>
 
 	<%= render 'shared/footer' %>
+	
 <script src="/assets/visuals.js" type="text/javascript"></script>
 <script src="/assets/explosions.js" type="text/javascript"></script>
 </body>
