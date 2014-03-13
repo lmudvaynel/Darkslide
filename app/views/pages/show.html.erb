@@ -13,8 +13,19 @@
 					<% end %>
 					</div>
 						<div class="clear"></div>
+						<% if @page.slug == "technical" %>
+							<script>
+								$('a.gallery').colorbox(
+									{ arrowKey: true,
+										rel:'group1',
+										transition:"fade",
+										speed: 200
+									}
+								);
+							</script>
+						<% end %>
 				</div>
 			</div>
 		</div>
 	</div>
-</div
+</div>
