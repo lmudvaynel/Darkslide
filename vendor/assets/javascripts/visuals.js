@@ -99,7 +99,7 @@ visuals = {
 		for (k = 0; k < 7; k++) {
 			svg.append("svg:circle")
 				.attr("cx",mx).attr("cy",my).attr("r",3)
-				.style("stroke","#cb272e").style("fill","#cb272e")
+				.style("stroke","#000000").style("fill","#000000")
 				.transition().delay(5000).duration(timeScale*800)
 					.attr("cx",mx+Math.floor(Math.random()*200)-100).attr("cy",my+Math.floor(Math.random()*200)-100)
 					.style("stroke",colors(++ci)).style("fill",colors(++ci)).style("stroke-opacity",1e-6).style("fill-opacity",1e-6).remove();
