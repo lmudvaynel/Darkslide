@@ -9,7 +9,7 @@ Footer.create!(content:'<div class="wrapper">
 <div class="phone">+7 (495) 749 29 59<br />
 <a>moscow@dark-slide.ru</a></div>
 
-<div class="phone" style="text-align:right;"><img src="assets/img/R-Media.png" /></div>
+<div class="phone" style="text-align:right;"><img src="../assets/img/R-Media.png" /></div>
 
 <div class="address">236016, <strong>г. Калининград</strong><br />
 ул. Литовский Вал, 38,<br />

@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 ActiveAdmin.register NewsItem do
 	menu priority: 4
   config.batch_actions = false
@@ -15,6 +17,7 @@ ActiveAdmin.register NewsItem do
   form do |f|
     f.inputs do
       f.input :title
+      f.input :image, :as => :file, :hint => image_tag(f.object.image.url(:thumb))
       f.input :description
       f.input :content, as: :ckeditor
       f.input :published_at
