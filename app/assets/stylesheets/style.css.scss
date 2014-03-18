@@ -178,6 +178,9 @@ em { font-style:italic}
 }
 .span3 > h4 {
   padding: 10px 0px;
+  font-size: 18px;
+  color: #d0d2d3;
+  font-family: CondPro-Bold;
 }
 .span3 > img {
   float: left;
@@ -187,11 +190,6 @@ em { font-style:italic}
 .span3 > p {
   float: left;
   width: 500px;
-}
-.span3 > h4 > a {
-  font-size: 18px;
-  color: #d0d2d3;
-  font-family: CondPro-Bold;
 }
 .cinema {
   margin-top: 10px;
@@ -221,13 +219,18 @@ em { font-style:italic}
 .wrap_archive {
   margin-top: 30px;
 }
-.archive, .archive:hover, .archive:active {
+.archive {
   font-size: 14px;
   color: #d0d2d3;
   letter-spacing: 1.1px;
   font-family: CondPro-Bold;
   text-transform: uppercase;
   line-height: 23px;
+}
+.archive:hover, .archive:active {
+  color: #ff0000;
+  font-size: 14px;
+  font-family: CondPro-Bold;
 }
 .wrap_more {
   clear: both;

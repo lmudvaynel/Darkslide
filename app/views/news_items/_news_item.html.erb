@@ -1,6 +1,6 @@
   <li class="span3">
   		<span class="publish_date"> <%= news_item.published_at %> </span>
-      <h4> <%= link_to news_item.title, news_item_path(news_item) %> </h4>
+      <h4> <%= news_item.title %> </h4>
       <%= image_tag news_item.image.url(:thumb) %>
       <p class="desc_content"> <%= news_item.description %> </p>
       <div class="wrap_more">
