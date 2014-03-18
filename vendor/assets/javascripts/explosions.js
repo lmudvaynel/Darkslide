@@ -1,4 +1,4 @@
-var svg = d3.select("#svgContainer").append("svg:svg").style("pointer-events", "all");
+var svg=0;
 var colors = d3.scale.category20b();
 var ci=0;
 var debug = false;
@@ -258,6 +258,7 @@ function keystrokes(event) {
 $(document).keypress(keystrokes);
 
 $(document).ready(function() {
+	var svg = d3.select("#svgContainer").append("svg:svg").style("pointer-events", "all")
 	setEventHandler('drawing', 'mousemove');
 	setEventHandler('drawing', 'mousedown');
     $("#mousemoveSelector").change(function() {
