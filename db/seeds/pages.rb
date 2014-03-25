@@ -106,13 +106,13 @@ Page.create!(slug: 'news_items', position: 8, name: 'Архив новостей
 						 template_id: 2)
 Page.create!(slug: 'geography', position: 9, name: 'Наша георграфия', hidden:false,
 						 template_id: 3, content:'<ul>
-	<li><a href="javascript: void(0);" onclick="mark1()" class="displaylink" targetDiv="city1">Калининград</li>
-	<li><a href="javascript: void(0);" onclick="mark2()" class="displaylink" targetDiv="city2">Москва</a></li>
-	<li><a href="javascript: void(0);" onclick="mark3()" class="displaylink" targetDiv="city3">Тольятти</a></li>
+	<li><a href="javascript: void(0);" onclick="mark1()" class="displaylink">Калининград</li>
+	<li><a href="javascript: void(0);" onclick="mark2()" class="displaylink">Москва</a></li>
+	<li><a href="javascript: void(0);" onclick="mark3()" class="displaylink">Тольятти</a></li>
 </ul>
 
 <div class="contentDiv" id="city1">
-<h5 class="cityname">Калининград</h5>
+<h5 class="cityname">г. Калининград</h5>
 
 <ul class="citylist">
 	<li>к/т &quot;Звезда&quot;, сеть &quot;Каро&quot;</li>
@@ -122,7 +122,7 @@ Page.create!(slug: 'geography', position: 9, name: 'Наша георграфи�
 </div>
 
 <div class="contentDiv" id="city2">
-<h5 class="cityname">Москва</h5>
+<h5 class="cityname">г. Москва</h5>
 
 <ul class="citylist">
 	<li>к/т &quot;Звезда&quot;, сеть &quot;Каро&quot;</li>
@@ -132,7 +132,7 @@ Page.create!(slug: 'geography', position: 9, name: 'Наша георграфи�
 </div>
 
 <div class="contentDiv" id="city3">
-<h5 class="cityname">Тольятти</h5>
+<h5 class="cityname">г. Тольятти</h5>
 
 <ul class="citylist">
 	<li>к/т &quot;Звезда&quot;, сеть &quot;Каро&quot;</li>
