@@ -105,4 +105,38 @@ Page.create!(slug: 'technical', position: 7, name: 'Технические ос�
 Page.create!(slug: 'news_items', position: 8, name: 'Архив новостей', hidden:true,
 						 template_id: 2)
 Page.create!(slug: 'geography', position: 9, name: 'Наша георграфия', hidden:false,
-						 template_id: 3)
+						 template_id: 3, content:'<ul>
+	<li><a href="javascript: void(0);" onclick="mark1()" class="displaylink" targetDiv="city1">Калининград</li>
+	<li><a href="javascript: void(0);" onclick="mark2()" class="displaylink" targetDiv="city2">Москва</a></li>
+	<li><a href="javascript: void(0);" onclick="mark3()" class="displaylink" targetDiv="city3">Тольятти</a></li>
+</ul>
+
+<div class="contentDiv" id="city1">
+<h5 class="cityname">Калининград</h5>
+
+<ul class="citylist">
+	<li>к/т &quot;Звезда&quot;, сеть &quot;Каро&quot;</li>
+	<li>1 зал: DS2000 - 4 шт, DS1400 - 2 шт</li>
+	<li>2 зал: DS2000 - 3 шт, DS1400 - 4 шт</li>
+</ul>
+</div>
+
+<div class="contentDiv" id="city2">
+<h5 class="cityname">Москва</h5>
+
+<ul class="citylist">
+	<li>к/т &quot;Звезда&quot;, сеть &quot;Каро&quot;</li>
+	<li>1 зал: DS2000 - 4 шт, DS1400 - 2 шт</li>
+	<li>2 зал: DS2000 - 3 шт, DS1400 - 4 шт</li>
+</ul>
+</div>
+
+<div class="contentDiv" id="city3">
+<h5 class="cityname">Тольятти</h5>
+
+<ul class="citylist">
+	<li>к/т &quot;Звезда&quot;, сеть &quot;Каро&quot;</li>
+	<li>1 зал: DS2000 - 4 шт, DS1400 - 2 шт</li>
+	<li>2 зал: DS2000 - 3 шт, DS1400 - 4 шт</li>
+</ul>
+</div>')

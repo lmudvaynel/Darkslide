@@ -15,3 +15,4 @@
 //= require jquery_ujs
 //= require jquery.colorbox-min
 //= require js
+//= require geography

@@ -251,3 +251,29 @@ em { font-style:italic}
 #footer a { }
 #footer a:hover { text-decoration:underline;}
 #footer .phone, #footer .address  { float:left; width:150px; padding: 0 15px}
+
+/* Geography */
+
+.contentDiv {
+  display: none;
+  margin-top: 20px;
+}
+.citylist {
+  font-size: 16px;
+  font-family: CondPro-Bold;
+  text-transform: uppercase;
+  line-height: 23px;
+}
+.cityname {
+  font-size: 16px;
+  font-family: CondPro-Bold;
+  text-transform: uppercase;
+  color: #ff0000;
+}
+.displaylink {
+  font-size: 16px;
+}
+.active, .displaylink:hover {
+  color: #ff0000;
+  font-size: 16px; 
+}
