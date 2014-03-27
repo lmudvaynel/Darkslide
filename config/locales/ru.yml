@@ -106,12 +106,14 @@ ru:
         parent: Родительская страница
         parent_id: Родительская страница
         position: Позиция
+        content: Содержание
         slug: Псевдоним
         updated_at: Дата обновления
       news_item:
         created_at: Дата создания
         id: Номер
         title: Заголовок
+        image: Изображение
         description: Краткое содержание
         content: Содержание
         published_at: Дата опубликования

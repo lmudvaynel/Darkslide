@@ -43,34 +43,28 @@
 	function mark1() {
 	 	//var latLng = new google.maps.LatLng(55.745431,37.571975);
 	 	map.panTo(myLatlng1);
-	 	$('.displaylink').bind('click', function() {
-	  $('.contentDiv').hide();
-	  $('.displaylink').removeClass('active');
+		$('.contentDiv').hide();
+		$('.displaylink').removeClass('active');
 		$(this).addClass('active');
-	  $(document.getElementById('city1')).show();
-	});
+		$(document.getElementById('city1')).show();
 	 }
 
 	function mark2() {
 	 	//var latLng = new google.maps.LatLng(55.745431,37.571975);
 	 	map.panTo(myLatlng2);
-	 	$('.displaylink').bind('click', function() {
-	  $('.contentDiv').hide();
-	  $('.displaylink').removeClass('active');
+		$('.contentDiv').hide();
+		$('.displaylink').removeClass('active');
 		$(this).addClass('active');
-	  $(document.getElementById('city2')).show();
-	});
+		$(document.getElementById('city2')).show();
 	 }
 
 	function mark3() {
 		//var latLng = new google.maps.LatLng(55.745431,37.571975);
 		map.panTo(myLatlng3);
-		$('.displaylink').bind('click', function() {
-	  $('.contentDiv').hide();
-	  $('.displaylink').removeClass('active');
+		$('.contentDiv').hide();
+		$('.displaylink').removeClass('active');
 		$(this).addClass('active');
-	  $(document.getElementById('city3')).show();
-	});
+		$(document.getElementById('city3')).show();
 	}  
 
 	google.maps.event.addDomListener(window, 'load', initialize);
@@ -88,6 +82,6 @@
 
 	<%= render 'shared/footer' %>
 
-	
+<%= javascript_include_tag "explosions" %>	
 </body>
 </html>
