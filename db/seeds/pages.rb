@@ -107,9 +107,9 @@ Page.create!(slug: 'news_items', position: 8, name: 'Архив новостей
 Page.create!(slug: 'geography', position: 7, name: 'Георграфия Darkslide', hidden:false,
 						 template_id: 3, content:'<div class="wrap_cities">
 <ul>
-	<li><a href="javascript: void(0);" onclick="mark1()" class="displaylink">Калининград</li>
-	<li><a href="javascript: void(0);" onclick="mark2()" class="displaylink">Москва</a></li>
-	<li><a href="javascript: void(0);" onclick="mark3()" class="displaylink">Тольятти</a></li>
+	<li><a id="link1" href="javascript: void(0);" onclick="mark1()" class="displaylink">Калининград</li>
+	<li><a id="link2" href="javascript: void(0);" onclick="mark2()" class="displaylink">Москва</a></li>
+	<li><a id="link3" href="javascript: void(0);" onclick="mark3()" class="displaylink">Тольятти</a></li>
 </ul>
 </div>
 <div class="contentDiv" id="city1">
