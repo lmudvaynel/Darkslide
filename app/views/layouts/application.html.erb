@@ -81,6 +81,9 @@
 	</div>
 
 	<%= render 'shared/footer' %>
-
+<script type="text/javascript">
+	if (document.getElementById('sidebar').offsetHeight < document.getElementById('common').offsetHeight)
+		 {document.getElementById('sidebar').style.height = (document.getElementById('common').offsetHeight +'px')}
+</script>
 </body>
 </html>

@@ -104,7 +104,7 @@ Page.create!(slug: 'technical', position: 6, name: 'Технические ос�
 ')
 Page.create!(slug: 'news_items', position: 8, name: 'Архив новостей', hidden:true,
 						 template_id: 2)
-Page.create!(slug: 'geography', position: 7, name: 'Георграфия Darkslide', hidden:false,
+Page.create!(slug: 'geography', position: 7, name: 'География Darkslide', hidden:false,
 						 template_id: 3, content:'<div class="wrap_cities">
 <ul>
 	<li><a id="link1" href="javascript: void(0);" onclick="mark1()" class="displaylink">Калининград</li>

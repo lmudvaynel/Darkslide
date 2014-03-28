@@ -6,7 +6,7 @@
         <%= raw @temp.temp_content %>
         <div class="page-content">
           <%= render 'shared/menu' %>
-          <div class="common">
+          <div id="common" class="common">
             <h3> <%= @news_item.title %></h3>
             <span class="publish_date"> <%= @news_item.published_at %> </span><br><br>
               <%= raw @news_item.content %>

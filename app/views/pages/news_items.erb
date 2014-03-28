@@ -5,7 +5,7 @@
 				<%= raw @page.template.temp_content %>
 				<div class="page-content">
 					<%= render 'shared/menu' %>
-					<div class="common">
+					<div id="common" class="common">
 					<% if @page.slug == "index" %>
 						<%= render 'news_items/list' %>
 					<% else %>
