@@ -7,7 +7,7 @@ set :stages, %w(production staging)
 set :default_stage, "staging"
 require 'capistrano/ext/multistage'
 
-set :application, "dslide" #write app name there
+set :application, "daslide" #write app name there
 
 set :scm, :git
 set :repository,  "git@github.com:simutin/Darkslide.git" #place your repo there

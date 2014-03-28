@@ -1,4 +1,4 @@
-app_dir = "/var/www/apps/dslide_production"
+app_dir = "/var/www/apps/daslide_production"
 
 # Set unicorn options
 worker_processes 4
